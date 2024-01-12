@@ -8,7 +8,7 @@ function App() {
         <div>2</div>
         <div>3</div>
       </div>
-      <p>message</p>
+      <p className="message">message</p>
       <div className="buttons">
         <button>Previous</button>
         <button>Next</button>
