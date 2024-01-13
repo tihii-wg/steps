@@ -7,10 +7,19 @@ body {
   color: #333;
 }
 
+.close {
+  margin-left: 520px;
+  margin-top: 20px;
+  cursor: pointer;
+  border:none;
+  font-size: 40px;
+  background-color: white;
+}
+
 .steps {
   background-color: rgb(240, 244, 245);
   max-width: 500px;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-right: 50px;
   margin-left: 50px;
   padding-top: 30px;
@@ -59,4 +68,5 @@ body {
   border: none;
   font-size: 14px;
   font-weight: bold;
+  cursor: pointer;
 }
