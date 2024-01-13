@@ -7,10 +7,11 @@ function App() {
   const [steps, setSteps] = useState(1);
 
   const previousHandler = () => {
-    setSteps(steps - 1);
+    if (steps > 1) setSteps(steps - 1);
   };
+
   const NextHandler = () => {
-    setSteps(steps + 1);
+    if (steps < 3) setSteps(steps + 1);
   };
 
   return (
