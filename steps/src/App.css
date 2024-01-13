@@ -1,5 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+}
+
 .steps {
-  background-color: rgb(194, 199, 200);
+  background-color: rgb(240, 244, 245);
   max-width: 500px;
   margin-top: 50px;
   margin-right: 50px;
@@ -15,12 +24,18 @@
   margin-bottom: 40px;
 }
 
-.numbers div {
+.numbers > div {
   margin: auto;
-  background-color: #7952f2;
-  align-items: center;
-  padding: 7px 12px;
+  padding: 10px 16px;
+  font-size: 18px;
   border-radius: 50px;
+  border-radius: 50%;
+  background-color: #e1e2e8;
+}
+
+.numbers .active {
+  background-color: #7950f2;
+  color: #fff;
 }
 
 .message {
