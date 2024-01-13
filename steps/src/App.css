@@ -40,19 +40,23 @@ body {
 
 .message {
   text-align: center;
+  font-weight: bold;
+  font-size: 20px;
   margin-bottom: 40px;
 }
 
 .buttons {
   display: flex;
   justify-content: space-between;
-  margin: 0px 70px 0px;
+  margin: 0px 65px 0px;
 }
 
 .buttons button {
   background-color: #7952f2;
   color: white;
   border-radius: 10px;
-  padding: 6px 10px;
+  padding: 7px 10px;
   border: none;
+  font-size: 14px;
+  font-weight: bold;
 }
