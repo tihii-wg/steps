@@ -34,8 +34,12 @@ function App() {
           </div>
           <p className="message">{message[steps - 1]}</p>
           <div className="buttons">
-            <Button handler={previousHandler} text={"Previous"} />
-            <Button handler={nextHandler} text={"Next"} />
+            <Button handler={previousHandler}>
+              <span>👈</span>Previous
+            </Button>
+            <Button handler={nextHandler}>
+              Next<span>👉</span>
+            </Button>
           </div>
         </div>
       )}
