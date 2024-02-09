@@ -1,6 +1,5 @@
 import "./App.css";
 import { React, useState } from "react";
-import { Button } from "./Button";
 
 const message = ["Learn HTML and CSS", "Learn JS", "Learn React"];
 
@@ -16,15 +15,13 @@ function App() {
     if (steps < 3) setSteps(steps + 1);
   };
 
-  const isCloseHandler = () => {
-    setIsClose(!isClose);
-  };
+	const isCloseHandler = () => {
+		setIsClose(!isClose)
+	}
 
   return (
     <>
-      <button className="close" onClick={isCloseHandler}>
-        &times;
-      </button>
+      <button className="close" onClick={isCloseHandler}>&times;</button>
       {isClose && (
         <div className="steps">
           <div className="numbers">
@@ -34,8 +31,8 @@ function App() {
           </div>
           <p className="message">{message[steps - 1]}</p>
           <div className="buttons">
-            <Button handler={previousHandler} text={"Previous"} />
-            <Button handler={nextHandler} text={"Next"} />
+            <button onClick={previousHandler}>Previous</button>
+            <button onClick={nextHandler}>Next</button>
           </div>
         </div>
       )}
