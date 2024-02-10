@@ -1,6 +1,7 @@
 import "./App.css";
 import { React, useState } from "react";
 import { Button } from "./Button";
+import { StepsMessage } from "./StepsMessage";
 
 const message = ["Learn HTML and CSS", "Learn JS", "Learn React"];
 
@@ -32,7 +33,9 @@ function App() {
             <div className={steps >= 2 ? "active" : ""}>2</div>
             <div className={steps >= 3 ? "active" : ""}>3</div>
           </div>
-          <p className="message">{message[steps - 1]}</p>
+          <StepsMessage steps={steps} message={message}>
+            <span>{message[steps - 1]}</span>
+          </StepsMessage>
           <div className="buttons">
             <Button handler={previousHandler}>
               <span>👈</span>Previous
